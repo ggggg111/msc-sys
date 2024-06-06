@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{024ef3c3-09fd-4421-9855-cd34b7b73b84}</ProjectGuid>
+    <RootNamespace>ThesisSystem</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\gerar\Documents\Libraries\Binaries\Other\libtorch-win-shared-with-deps-debug-2.1.0+cu121\libtorch\include\torch\csrc\api\include;C:\Users\gerar\Documents\Libraries\Binaries\Other\libtorch-win-shared-with-deps-debug-2.1.0+cu121\libtorch\include;$(ProjectDir)src;C:\Users\gerar\Documents\Libraries\Binaries\GitHub\SDL2-devel-2.28.3-VC\SDL2-2.28.3\include;C:\Users\gerar\Documents\Libraries\Binaries\GitHub\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include;$(ProjectDir)vendor\imgui\backends;$(ProjectDir)vendor\imgui;%(AdditionalIncludeDirectories);$(ProjectDir)vendor\imgui-file-dialog;$(ProjectDir)vendor\icon-font-cpp-headers;C:\Users\gerar\Documents\Libraries\Binaries\Other\opencv-4.8.0\build\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\gerar\Documents\Libraries\Binaries\Other\libtorch-win-shared-with-deps-debug-2.1.0+cu121\libtorch\lib;C:\Users\gerar\Documents\Libraries\Binaries\GitHub\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\lib\x64;C:\Users\gerar\Documents\Libraries\Binaries\GitHub\SDL2-devel-2.28.3-VC\SDL2-2.28.3\lib\x64;C:\Users\gerar\Documents\Libraries\Binaries\Other\opencv-4.8.0\build\x64\vc16\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;torch.lib;torch_cuda.lib;caffe2_nvrtc.lib;c10.lib;c10_cuda.lib;torch_cpu.lib;opencv_world480d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);NOMINMAX</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\gerar\Documents\Libraries\Binaries\Other\libtorch-win-shared-with-deps-2.1.0+cu121\libtorch\include\torch\csrc\api\include;C:\Users\gerar\Documents\Libraries\Binaries\Other\libtorch-win-shared-with-deps-2.1.0+cu121\libtorch\include;$(ProjectDir)\src;C:\Users\gerar\Documents\Libraries\Binaries\GitHub\SDL2-devel-2.28.3-VC\SDL2-2.28.3\include;C:\Users\gerar\Documents\Libraries\Binaries\GitHub\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\include;$(ProjectDir)vendor\imgui\backends;$(ProjectDir)vendor\imgui;%(AdditionalIncludeDirectories);$(ProjectDir)vendor\imgui-file-dialog;$(ProjectDir)vendor\icon-font-cpp-headers;C:\Users\gerar\Documents\Libraries\Binaries\Other\opencv-4.8.0\build\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\gerar\Documents\Libraries\Binaries\Other\libtorch-win-shared-with-deps-2.1.0+cu121\libtorch\lib;C:\Users\gerar\Documents\Libraries\Binaries\GitHub\SDL2_image-devel-2.6.3-VC\SDL2_image-2.6.3\lib\x64;C:\Users\gerar\Documents\Libraries\Binaries\GitHub\SDL2-devel-2.28.3-VC\SDL2-2.28.3\lib\x64;C:\Users\gerar\Documents\Libraries\Binaries\Other\opencv-4.8.0\build\x64\vc16\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;torch.lib;torch_cuda.lib;caffe2_nvrtc.lib;c10.lib;c10_cuda.lib;torch_cpu.lib;opencv_world480.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="src\gui\Console.cpp" />
+    <ClCompile Include="src\gui\MainMenuBar.cpp" />
+    <ClCompile Include="src\gui\Results.cpp" />
+    <ClCompile Include="src\gui\Setup.cpp" />
+    <ClCompile Include="src\gui\Visualizer.cpp" />
+    <ClCompile Include="src\modules\Editor.cpp" />
+    <ClCompile Include="src\modules\Input.cpp" />
+    <ClCompile Include="src\modules\Renderer.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\modules\TorchLoader.cpp" />
+    <ClCompile Include="src\modules\UserInterface.cpp" />
+    <ClCompile Include="src\modules\Window.cpp" />
+    <ClCompile Include="src\utils\Loading.cpp" />
+    <ClCompile Include="src\utils\Log.cpp" />
+    <ClCompile Include="vendor\imgui-file-dialog\ImGuiFileDialog.cpp" />
+    <ClCompile Include="vendor\imgui\backends\imgui_impl_sdl2.cpp" />
+    <ClCompile Include="vendor\imgui\backends\imgui_impl_sdlrenderer2.cpp" />
+    <ClCompile Include="vendor\imgui\imgui.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_widgets.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Application.h" />
+    <ClInclude Include="src\gui\Console.h" />
+    <ClInclude Include="src\gui\GuiElement.h" />
+    <ClInclude Include="src\gui\MainMenuBar.h" />
+    <ClInclude Include="src\gui\Results.h" />
+    <ClInclude Include="src\gui\Setup.h" />
+    <ClInclude Include="src\gui\Visualizer.h" />
+    <ClInclude Include="src\modules\Editor.h" />
+    <ClInclude Include="src\modules\Input.h" />
+    <ClInclude Include="src\modules\Renderer.h" />
+    <ClInclude Include="src\modules\Module.h" />
+    <ClInclude Include="src\modules\TorchLoader.h" />
+    <ClInclude Include="src\modules\UserInterface.h" />
+    <ClInclude Include="src\modules\Window.h" />
+    <ClInclude Include="src\utils\Globals.h" />
+    <ClInclude Include="src\utils\Loading.h" />
+    <ClInclude Include="src\utils\Log.h" />
+    <ClInclude Include="vendor\icon-font-cpp-headers\IconsFontAwesome6.h" />
+    <ClInclude Include="vendor\imgui-file-dialog\ImGuiFileDialog.h" />
+    <ClInclude Include="vendor\imgui\backends\imgui_impl_sdl2.h" />
+    <ClInclude Include="vendor\imgui\backends\imgui_impl_sdlrenderer2.h" />
+    <ClInclude Include="vendor\imgui\imconfig.h" />
+    <ClInclude Include="vendor\imgui\imgui.h" />
+    <ClInclude Include="vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="vendor\imgui\imstb_truetype.h" />
+    <ClInclude Include="vendor\portable-file-dialogs\portable-file-dialogs.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,9 @@
+[submodule "Thesis-System/Thesis-System/vendor/imgui-file-dialog"]
+	path = Thesis-System/Thesis-System/vendor/imgui-file-dialog
+	url = https://github.com/aiekick/ImGuiFileDialog
+[submodule "Thesis-System/Thesis-System/vendor/icon-font-cpp-headers"]
+	path = Thesis-System/Thesis-System/vendor/icon-font-cpp-headers
+	url = https://github.com/juliettef/IconFontCppHeaders
+[submodule "Thesis-System/Thesis-System/vendor/imgui"]
+	path = Thesis-System/Thesis-System/vendor/imgui
+	url = https://github.com/ocornut/imgui
